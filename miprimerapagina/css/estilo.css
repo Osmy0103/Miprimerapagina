@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Cinzel:wght@600&display=swap');
+
+.logo {
+    width: 120px;
+    margin-left: 20px;
+    ;
+}
+
+header {
+    background: linear-gradient(to right, black, red);
+    height: 120px;
+    border-bottom: 2px #0B2027 solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 20px;
+}
+
+li {
+    font-family: 'Cinzel', serif;
+    display: inline-block;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 20px;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+body {
+    background-image: url("https://fondosmil.com/fondo/4572.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 2px;
+
+}
+
+.home {
+    height: 15vh;
+    background-color: black;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: 'Aboreto', cursive;
+    color: white;
+    text-align: center;
+    margin: 10px 40px;
+    text-transform: none;
+
+}
+
+.imagenlinea {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    border: 2px;
+    padding: 5px;
+    width: 100%;
+    height: 600px;
+}
+
+.thelegendofzelda {
+    border: 3px white solid;
+    width: 800px;
+    height: 700px;
+    border-radius: 4px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+
+
+}
+
+h3 {
+    color: white;
+    font-family: 'Aboreto', cursive;
+    font-size: 19px;
+    text-align: center;
+}
+
+.the {
+    background-color: black;
+    margin: 5px 5px;
+    padding: 5px;
+    font-size: 10px;
+    width: 180px;
+
+}
+
+.imagen {
+    width: 75%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 10px;
+    padding: 5px;
+    border: 2px red solid;
+
+
+}
+
+.info {
+    background: linear-gradient(to right, black, red);
+    color: white;
+    width: 100px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* parte del formulario  */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+}
+
+.caja {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid red;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form-boton {
+    background: linear-gradient(to right, black, red);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 40%;
+    text-align: center;
+
+}
+
+.boton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+footer {
+    background: linear-gradient(to right, black, red);
+    height: 60px;
+    border-bottom: 2px #0B2027 solid;
+    display: flex;
+    padding: 40px 20px;
+    gap: 1px;
+    margin: 60px 5px 0px 5px;
+    font-size: small;
+
+}
+
+/* sitema de areas o grillas */
+.pag {
+    grid-area: pag;
+
+}
+
+.Osmary {
+    grid-area: osmary;
+}
+
+.gmail {
+    grid-area: gmail;
+}
+
+.cont{
+    display: grid;
+    grid-template-areas:
+        "pag pag osmary osmary "
+        "pag pag  osmary osmary"
+        "gmail gmail gmail gmail"
+    ;
+}
+
+
+@media (max-width: 900px) and (min-width: 600px) {
+    .contenedor {
+        grid-template-areas:
+            "pag osmary"
+            "pag osmary"
+            "gmail gmail"
+        ;
+    }
+
+}
+
+@media (max-width:599px) {
+    .contenedor {
+        grid-template-areas:
+            "pag"
+            "osmary"
+            "gmail"
+        ;
+    }
+}

@@ -1,0 +1,48 @@
+.logo {
+    width: 200px;
+    ;
+}
+
+.fondo-clr {
+    background: linear-gradient(to right, black, red);
+
+}
+
+.letra {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+body {
+    background-image: url("https://fondosmil.com/fondo/4572.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 2px;
+    color: white;
+
+}
+
+.img {
+    height: 400px;
+    object-fit: fill;
+    margin: 30px;
+
+}
+
+.cuadro {
+    background-color: black;
+}
+
+.zelda {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    margin: 10px;
+    padding: 5px;
+}
+
